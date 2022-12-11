@@ -64,7 +64,7 @@ pub enum WsEvent {
 }
 
 pub struct WsReceiver {
-    rx: std::sync::mpsc::Receiver<WsEvent>,
+    pub rx: std::sync::mpsc::Receiver<WsEvent>,
 }
 
 impl WsReceiver {
